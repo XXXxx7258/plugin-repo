@@ -90,5 +90,10 @@
   {
     "id": "SkillfulPainter.repeat_plugin",
     "repositoryUrl": "https://github.com/SkillfulPainter/repeat_plugin"
+  },
+  
+  {
+    "id": "foxcyber907.balance_plugin",
+    "repositoryUrl": "https://github.com/foxcyber907/maim_balance_plugin"
   }
 ]

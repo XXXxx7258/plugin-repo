@@ -1039,5 +1039,25 @@
         ]
       }
     }
+  },
+  {
+    "id": "foxcyber907.balance_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "balance_plugin",
+      "version": "1.0.0",
+      "description": "硅基流动余额",
+      "author": {
+        "name": "雅诺狐",
+        "url": "https://github.com/foxcyber907/maim_balance_plugin"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.8.0",
+        "max_version": "0.8.10"
+      },
+      "default_locale": "zh-CN",
+      "locales_path": "_locales"
+    }
   }
 ]

@@ -1333,7 +1333,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦联网搜索插件",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "提供联网搜索工具，使麦麦可以根据需要上网搜索信息",
       "author": {
         "name": "Windpicker_owo",
@@ -1341,7 +1341,8 @@
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.10.0"
+        "min_version": "0.10.0",
+        "max_version": "0.10.0"
       },
       "homepage_url": "https://github.com/Windpicker-owo/InternetSearchPlugin",
       "repository_url": "https://github.com/Windpicker-owo/InternetSearchPlugin",
@@ -1349,6 +1350,10 @@
         "tool",
         "search",
         "online"
+      ],
+      "categories": [
+        "Internet",
+        "Search"
       ],
       "default_locale": "zh-CN",
       "locales_path": "_locales",

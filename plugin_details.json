@@ -34,6 +34,156 @@
     }
   },
   {
+    "id": "SengokuCola.BetterExpressionPlugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "表达方式管理插件 (Expression Manager Plugin)",
+      "version": "1.0.0",
+      "description": "管理麦麦的表达方式，支持添加、删除、修改和查看表达方式",
+      "author": {
+        "name": "SengokuCola",
+        "url": "https://github.com/MaiM-with-u"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.10.0"
+      },
+      "homepage_url": "https://github.com/SengokuCola/BetterExpressionPlugin",
+      "repository_url": "https://github.com/SengokuCola/BetterExpressionPlugin",
+      "keywords": [
+        "expression",
+        "management",
+        "admin",
+        "style",
+        "grammar"
+      ],
+      "categories": [
+        "Management",
+        "Admin"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "management",
+        "components": [
+          {
+            "type": "command",
+            "name": "add_expression",
+            "description": "添加新的表达方式"
+          },
+          {
+            "type": "command",
+            "name": "list_expressions",
+            "description": "列举表达方式（支持翻页）"
+          },
+          {
+            "type": "command",
+            "name": "delete_expression",
+            "description": "删除指定的表达方式"
+          },
+          {
+            "type": "command",
+            "name": "modify_expression_weight",
+            "description": "修改表达方式的权重"
+          },
+          {
+            "type": "command",
+            "name": "review_expressions",
+            "description": "查看表达方式使用记录"
+          },
+          {
+            "type": "command",
+            "name": "learn_expression",
+            "description": "学习表达方式"
+          },
+          {
+            "type": "command",
+            "name": "analyze_message_expression",
+            "description": "分析消息表达方式"
+          }
+        ],
+        "features": [
+          "添加表达方式（语言风格和句法特点）",
+          "分页列举表达方式",
+          "删除表达方式",
+          "修改表达方式权重",
+          "支持按群组管理",
+          "查看表达方式使用记录",
+          "学习表达方式",
+          "分析消息表达方式"
+        ]
+      }
+    }
+  },
+  {
+    "id": "SengokuCola.BetterFrequency",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "BetterFrequency 频率控制插件 (BetterFrequency Plugin)",
+      "version": "1.0.0",
+      "description": "控制聊天频率，支持设置focus_value和talk_frequency调整值，提供完整命令和简化命令",
+      "author": {
+        "name": "MaiCore开发团队",
+        "url": "https://github.com/MaiM-with-u"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.10.0"
+      },
+      "homepage_url": "https://github.com/SengokuCola/BetterFrequency",
+      "repository_url": "https://github.com/SengokuCola/BetterFrequency",
+      "keywords": [
+        "frequency",
+        "control",
+        "focus_value",
+        "talk_frequency",
+        "plugin",
+        "shortcut"
+      ],
+      "categories": [
+        "Chat",
+        "Frequency",
+        "Control"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "frequency",
+        "components": [
+          {
+            "type": "command",
+            "name": "set_focus_value",
+            "description": "设置当前聊天的focus_value调整值",
+            "pattern": "/chat focus_value <数字> 或 /chat f <数字>"
+          },
+          {
+            "type": "command",
+            "name": "set_talk_frequency",
+            "description": "设置当前聊天的talk_frequency调整值",
+            "pattern": "/chat talk_frequency <数字> 或 /chat t <数字>"
+          },
+          {
+            "type": "command",
+            "name": "show_frequency",
+            "description": "显示当前聊天的频率控制状态",
+            "pattern": "/chat show 或 /chat s"
+          }
+        ],
+        "features": [
+          "设置focus_value调整值",
+          "设置talk_frequency调整值",
+          "显示当前频率控制状态",
+          "实时频率控制调整",
+          "命令执行反馈（不保存消息）",
+          "支持完整命令和简化命令",
+          "快速操作支持"
+        ]
+      }
+    }
+  },
+  {
     "id": "A0000Xz.MaiBot-Tarots-Plugin",
     "manifest": {
       "manifest_version": 1,
@@ -1422,6 +1572,51 @@
     }
   },
   {
+    "id": "whitefox20011120.bilibili_dynamic_push_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "bilibili_dynamic_push_plugin",
+      "version": "1.3.0",
+      "description": "定时检测B站UP主动态并推送到指定QQ群（跳过置顶、支持多UID/多群、启动日志提示）。",
+      "author": {
+        "name": "白狐",
+        "url": ""
+      },
+      "license": "AGPL-3.0",
+      "host_application": {
+        "min_version": "0.10.0",
+        "max_version": "0.10.0"
+      },
+      "keywords": [
+        "bilibili",
+        "动态",
+        "自动推送",
+        "UP主",
+        "QQ"
+      ],
+      "categories": [
+        "automation",
+        "bilibili",
+        "push"
+      ],
+      "repository_url": "",
+      "default_locale": "zh-CN",
+      "plugin_info": {
+        "is_built_in": false,
+        "components": [
+          {
+            "type": "action",
+            "name": "auto_push",
+            "description": "自动监控UP主动态并推送到QQ群"
+          }
+        ]
+      },
+      "python_dependencies": [
+        "aiohttp"
+      ]
+    }
+  },
+  {
     "id": "XinxInxiN0.bilibili_video_sender_plugin",
     "manifest": {
       "manifest_version": 1,
@@ -1569,6 +1764,79 @@
             "name": "proactive_greet",
             "description": "在私聊中由意愿系统选择，主动发起简短自然开场"
           }
+        ]
+      }
+    }
+  },
+  {
+    "id": "CharTyr.Maibot_hltv_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "CS2/CSGO HLTV 信息插件 (CS2/CSGO HLTV Info Plugin)",
+      "version": "1.0.0",
+      "description": "智能检测CS2/CSGO话题讨论，提供选手数据、比赛信息和实时比赛监控功能",
+      "author": {
+        "name": "MaiBot Plugin Developer",
+        "url": "https://github.com/MaiM-with-u"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.10.0"
+      },
+      "homepage_url": "https://github.com/MaiM-with-u/maibot",
+      "repository_url": "https://github.com/MaiM-with-u/maibot",
+      "keywords": [
+        "cs2",
+        "csgo",
+        "hltv",
+        "esports",
+        "gaming",
+        "counter-strike"
+      ],
+      "categories": [
+        "Gaming",
+        "Information",
+        "Sports"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "information_provider",
+        "components": [
+          {
+            "type": "action",
+            "name": "cs2_topic_detection",
+            "description": "检测CS2/CSGO相关话题讨论"
+          },
+          {
+            "type": "action",
+            "name": "live_match_monitor",
+            "description": "监控进行中的比赛并提供实时数据"
+          },
+          {
+            "type": "tool",
+            "name": "get_player_info",
+            "description": "获取选手详细信息和统计数据"
+          },
+          {
+            "type": "tool",
+            "name": "get_team_info",
+            "description": "���取战队信息和排名"
+          },
+          {
+            "type": "tool",
+            "name": "get_match_info",
+            "description": "获取比赛信息和结果"
+          }
+        ],
+        "features": [
+          "智能CS2/CSGO话题检测",
+          "选手数据和统计信息查询",
+          "战队排名和成员信息",
+          "实时比赛监控和数据推送",
+          "比赛结果和历史记录查询",
+          "数据缓存和API限流保护"
         ]
       }
     }

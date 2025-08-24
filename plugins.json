@@ -8,6 +8,14 @@
     "repositoryUrl": "https://github.com/SengokuCola/MutePlugin"
   },
   {
+    "id":"SengokuCola.BetterExpressionPlugin",
+    "repositoryUrl": "https://github.com/SengokuCola/BetterExpressionPlugin"
+  },
+  {
+    "id":"SengokuCola.BetterFrequency",
+    "repositoryUrl": "https://github.com/SengokuCola/BetterFrequency"
+  },
+  {
     "id": "A0000Xz.MaiBot-Tarots-Plugin",
     "repositoryUrl": "https://github.com/A0000Xz/MaiBot-Tarots-Plugin"
   },
@@ -132,7 +140,7 @@
   {
 
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
-    "repositoryUrl": "https://github.com/whitefox20011120/bilibili_dynamic_push_pluginO"
+    "repositoryUrl": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin"
   },
   {
     "id": "XinxInxiN0.bilibili_video_sender_plugin",
@@ -147,6 +155,10 @@
   {
     "id": "yhny1001.proactive_talk_plugin",
     "repositoryUrl": "https://github.com/yhny1001/proactive_talk_plugin"
+  },
+  {
+    "id": "CharTyr.Maibot_hltv_plugin",
+    "repositoryUrl": "https://github.com/CharTyr/Maibot_hltv_plugin"
   }
 ]
 

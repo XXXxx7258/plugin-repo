@@ -4,7 +4,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "群聊禁言管理插件 (Mute Plugin)",
-      "version": "4.0.1",
+      "version": "4.1.0",
       "description": "群聊禁言管理插件，提供智能禁言功能",
       "author": {
         "name": "SengokuCola",
@@ -12,10 +12,8 @@
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.10.0"
+        "min_version": "0.10.1"
       },
-      "homepage_url": "https://github.com/SengokuCola/MutePlugin",
-      "repository_url": "https://github.com/SengokuCola/MutePlugin",
       "keywords": [
         "mute",
         "ban",
@@ -999,7 +997,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦的怪物猎人集会码插件",
-      "version": "1.0.0",
+      "version": "1.2.0",
       "description": "提供怪物猎人集会码的登记、查询和删除功能，支持多群组隔离管理",
       "author": {
         "name": "倒过来的蛋糕蛋糕",
@@ -1014,26 +1012,15 @@
         "集会"
       ],
       "categories": [
-        "游戏",
-        "实用工具"
+        "Entertainment & Interaction",
+        "Utility Tools"
       ],
       "repository_url": "https://github.com/dkdcakedangao/MaiBot-MHWJH-Plugin",
       "default_locale": "zh-CN",
       "locales_path": "_locales",
       "host_application": {
-        "min_version": "0.8.0",
-        "max_version": "0.8.1"
-      },
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "action",
-            "name": "MHWJHAction",
-            "description": "处理怪物猎人集会码的登记、查询和删除操作"
-          }
-        ]
+        "min_version": "0.9.0",
+        "max_version": "0.10.1"
       }
     }
   },
@@ -1099,7 +1086,7 @@
       "description": "一个主动发起“戳一戳”的 MaiMai 插件，帮助你轻松与好友互动，自动发起戳一戳，增添群聊乐趣。",
       "author": {
         "name": "何夕",
-        "url": "https://github.com/liuchunyu44/acpoke_plugin",
+        "url": "https://github.com/Heximiao/acpoke_plugin",
         "email": "lcy1416603026@gmail.com"
       },
       "license": "MIT",
@@ -1108,8 +1095,8 @@
         "max_version": "0.10.1"
       },
       "entry": "plugin.py",
-      "homepage_url": "https://github.com/liuchunyu44/acpoke_plugin",
-      "repository_url": "https://github.com/liuchunyu44/acpoke_plugin",
+      "homepage_url": "https://github.com/Heximiao/acpoke_plugin",
+      "repository_url": "https://github.com/Heximiao/acpoke_plugin",
       "keywords": [
         "poke",
         "maimai",
@@ -1600,7 +1587,8 @@
       "categories": [
         "automation",
         "bilibili",
-        "push"
+        "push",
+        "Utility Tools"
       ],
       "default_locale": "zh-CN",
       "plugin_info": {

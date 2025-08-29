@@ -92,8 +92,8 @@
     "repositoryUrl": "https://github.com/internetsb/Maizone"
   },
   {
-    "id": "liuchunyu44.acpoke_plugin",
-    "repositoryUrl": "https://github.com/liuchunyu44/acpoke_plugin"
+    "id": "Heximiao.acpoke_plugin",
+    "repositoryUrl": "https://github.com/Heximiao/acpoke_plugin"
   },
   {
     "id": "SkillfulPainter.repeat_plugin",
@@ -159,8 +159,29 @@
   {
     "id": "CharTyr.Maibot_hltv_plugin",
     "repositoryUrl": "https://github.com/CharTyr/Maibot_hltv_plugin"
+  },
+  {
+    "id": "Unreal.My_Fucked_turtle_soup",
+    "repositoryUrl": "https://github.com/svila-ylym/My_Fucked_turtle_soup-Maimbot"
+  },
+  {
+    "id": "Windpicker-owo.maibot-screen-monitor-plugin",
+    "repositoryUrl": "https://github.com/Windpicker-owo/maibot-screen-monitor-plugin"
+  },
+  {
+    "id": "khIqwq.owner_auth_plugin",
+    "repositoryUrl": "https://github.com/khiqwq/owner_auth_plugin"
+  },
+  {
+    "id": "Heximiao.turtlesoup_plugin",
+    "repositoryUrl": "https://github.com/Heximiao/turtlesoup_plugin"
+  },
+  {
+    "id": "Unreal.My_Fucked_100_People",
+    "repositoryUrl": "https://github.com/svila-ylym/My_Fucked_100_People-Maimbot"
   }
 ]
+
 
 
 

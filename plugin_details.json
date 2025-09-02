@@ -4,16 +4,18 @@
     "manifest": {
       "manifest_version": 1,
       "name": "群聊禁言管理插件 (Mute Plugin)",
-      "version": "4.1.0",
+      "version": "4.2.0",
       "description": "群聊禁言管理插件，提供智能禁言功能",
       "author": {
         "name": "SengokuCola",
         "url": "https://github.com/SengokuCola"
       },
-      "license": "GPL-v3.0-or-later",
+      "license": "MIT",
       "host_application": {
-        "min_version": "0.10.1"
+        "min_version": "0.10.2"
       },
+      "homepage_url": "https://github.com/SengokuCola",
+      "repository_url": "https://github.com/SengokuCola/MutePlugin",
       "keywords": [
         "mute",
         "ban",
@@ -628,7 +630,7 @@
       "license": "GPL-v3.0-or-later",
       "host_application": {
         "min_version": "0.9.0",
-        "max_version": "0.9.1"
+        "max_version": "0.10.1"
       },
       "homepage_url": "https://github.com/schxar/doubao_pic_plugin",
       "repository_url": "https://github.com/schxar/doubao_pic_plugin",
@@ -674,7 +676,7 @@
         "features": [
           "智能LLM判定生成时机",
           "高质量AI图片生成",
-          "结果缓存机制",
+          "��果缓存机制",
           "多种图片尺寸支持",
           "完整的错误处理"
         ]
@@ -1029,16 +1031,16 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.0.0",
+      "version": "2.1.2",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
         "url": "https://github.com/internetsb"
       },
-      "license": "AGPL-v3.0",
+      "license": "MIT",
       "host_application": {
         "min_version": "0.8.0",
-        "max_version": "0.10.0"
+        "max_version": "0.10.2"
       },
       "homepage_url": "https://github.com/internetsb/Maizone",
       "repository_url": "https://github.com/internetsb/Maizone",

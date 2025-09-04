@@ -1479,7 +1479,7 @@
       "license": "GPL-v3.0-or-later",
       "host_application": {
         "min_version": "0.10.0",
-        "max_version": "0.10.1"
+        "max_version": "0.10.2"
       },
       "homepage_url": "https://github.com/Windpicker-owo/InternetSearchPlugin",
       "repository_url": "https://github.com/Windpicker-owo/InternetSearchPlugin",
@@ -1846,10 +1846,10 @@
       "license": "MIT",
       "host_application": {
         "min_version": "0.10.1",
-        "max_version": "0.10.1"
+        "max_version": "0.10.2"
       },
-      "homepage_url": "https://github.com/your-repo",
-      "repository_url": "https://github.com/your-repo",
+      "homepage_url": "https://github.com/Windpicker-owo",
+      "repository_url": "https://github.com/Windpicker-owo/maibot-screen-monitor-plugin",
       "keywords": [
         "screen",
         "monitor"

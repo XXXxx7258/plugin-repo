@@ -260,8 +260,8 @@
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.9.0",
-        "max_version": "0.9.1"
+        "min_version": "0.10.2",
+        "max_version": "0.10.2"
       },
       "homepage_url": "https://github.com/schxar/doubao_search_plugin",
       "repository_url": "https://github.com/schxar/doubao_search_plugin",
@@ -696,8 +696,8 @@
       },
       "license": "MIT",
       "host_application": {
-        "min_version": "0.9.0",
-        "max_version": "0.9.1"
+        "min_version": "0.10.2",
+        "max_version": "0.10.2"
       },
       "homepage_url": "https://github.com/schxar/music_plugin",
       "repository_url": "https://github.com/schxar/music_plugin",
@@ -1030,7 +1030,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.1.2",
+      "version": "2.1.4",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
@@ -1551,8 +1551,7 @@
       },
       "license": "AGPL-3.0",
       "host_application": {
-        "min_version": "0.9.0",
-        "max_version": "0.10.1"
+        "min_version": "0.9.0"
       },
       "homepage_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
       "repository_url": "",
@@ -1878,15 +1877,15 @@
     "manifest": {
       "manifest_version": 1,
       "name": "主人身份验证插件 (Owner Authentication Plugin)",
-      "version": "1.1.0",
-      "description": "为麦麦机器人提供主人身份验证功能，在思考流程前验证发言者身份，兼容0.10.0版本",
+      "version": "1.1.1",
+      "description": "为麦麦机器人提供主人身份验证功能，在思考流程前验证发言者身份，兼容0.10.2版本",
       "author": {
         "name": "风花叶",
         "url": "https://github.com/khiqwq"
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.10.0"
+        "min_version": "0.10.2"
       },
       "homepage_url": "https://github.com/khiqwq/owner_auth_plugin",
       "repository_url": "https://github.com/khiqwq/owner_auth_plugin",
@@ -1898,8 +1897,7 @@
         "patch"
       ],
       "categories": [
-        "Security",
-        "Authentication"
+        "Other"
       ],
       "default_locale": "zh-CN",
       "locales_path": "_locales",

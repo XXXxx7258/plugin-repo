@@ -356,6 +356,36 @@
     }
   },
   {
+    "id": "ZmasCloud.makeplugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "麦麦插件生成器",
+      "version": "0.6.1",
+      "description": "让你的麦麦给你写插件！（最新beta版（麦麦1群群文件）可以直接调用llm模型而非openai接口！",
+      "author": {
+        "name": "Zmas",
+        "url": "https://github.com/ZmasCloud"
+      },
+      "license": "AGPL-3.0",
+      "host_application": {
+        "min_version": "0.7.3",
+        "max_version": "4.0.0"
+      },
+      "homepage_url": "https://github.com/zmascloud/",
+      "repository_url": "https://github.com/zmascloud/makeplugin",
+      "keywords": [
+        "插件生成器",
+        "ai"
+      ],
+      "categories": [
+        "Content Generation",
+        "External Integration"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales"
+    }
+  },
+  {
     "id": "TT-P607.MaiMbot-Pixiv-Setu-Plugin",
     "manifest": {
       "manifest_version": 1,
@@ -1572,7 +1602,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦发B站视频",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "description": "让麦麦解析b站视频链接并发送，群聊私聊都可用",
       "author": {
         "name": "XinxInxiN0",
@@ -1782,7 +1812,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "海龟汤",
-      "version": "1.6.0",
+      "version": "1.6.2",
       "description": "支持游戏模式的海龟汤题目生成和互动。0.10+请移步 https://github.com/Heximiao/turtlesoup_plugin",
       "author": {
         "name": "Unreal"

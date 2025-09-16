@@ -360,29 +360,17 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦插件生成器",
-      "version": "0.6.1",
-      "description": "让你的麦麦给你写插件！（最新beta版（麦麦1群群文件）可以直接调用llm模型而非openai接口！",
+      "version": "0.0.4",
+      "description": "让你的麦麦给你写麦麦v0.1插件！",
       "author": {
-        "name": "Zmas",
-        "url": "https://github.com/ZmasCloud"
+        "name": "zmas",
+        "url": "https://bgithub.xyz/ZmasCloud"
       },
       "license": "AGPL-3.0",
       "host_application": {
-        "min_version": "0.7.3",
-        "max_version": "4.0.0"
-      },
-      "homepage_url": "https://github.com/zmascloud/",
-      "repository_url": "https://github.com/zmascloud/makeplugin",
-      "keywords": [
-        "插件生成器",
-        "ai"
-      ],
-      "categories": [
-        "Content Generation",
-        "External Integration"
-      ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales"
+        "min_version": "0.7.0",
+        "max_version": "0.7.9"
+      }
     }
   },
   {
@@ -1042,7 +1030,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.1.4",
+      "version": "2.1.5",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",

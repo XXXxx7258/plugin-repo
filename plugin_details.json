@@ -12,7 +12,7 @@
       },
       "license": "MIT",
       "host_application": {
-        "min_version": "0.10.2"
+        "min_version": "0.10.3"
       },
       "homepage_url": "https://github.com/SengokuCola",
       "repository_url": "https://github.com/SengokuCola/MutePlugin",
@@ -1031,7 +1031,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
@@ -1630,9 +1630,9 @@
     "id": "XXXxx7258.google_search_plugin",
     "manifest": {
       "manifest_version": 1,
-      "name": "Google 搜索插件 (Google Search Plugin)",
+      "name": "Google 搜索以及缩写翻译插件 (Google Search and Abbreviation Translation Plugin)",
       "version": "1.0.0",
-      "description": "支持多个搜索引擎的网络搜索插件，具有自动降级功能。",
+      "description": "支持多个搜索引擎的网络搜索以及聚合翻译搜索插件，具有自动降级功能。",
       "author": {
         "name": "晴空",
         "url": "https://github.com/XXXxx7258"
@@ -1650,11 +1650,15 @@
         "internet",
         "查询",
         "搜索",
-        "多引擎"
+        "多引擎",
+        "翻译",
+        "缩写",
+        "nbnhhsh"
       ],
       "categories": [
         "Search",
-        "Utilities"
+        "Utilities",
+        "Translation"
       ],
       "default_locale": "zh-CN",
       "locales_path": "_locales",
@@ -1666,6 +1670,11 @@
             "type": "tool",
             "name": "web_search",
             "description": "进行网络搜索并聚合结果"
+          },
+          {
+            "type": "tool",
+            "name": "abbreviation_translate",
+            "description": "翻译中文网络缩写词汇"
           }
         ],
         "features": [
@@ -1673,7 +1682,10 @@
           "自动降级机制",
           "可配置的搜索引擎顺序",
           "重试机制",
-          "丰富的配置选项"
+          "丰富的配置选项",
+          "中文缩写翻译功能",
+          "神奇海螺API集成",
+          "翻译结果缓存机制"
         ]
       }
     }

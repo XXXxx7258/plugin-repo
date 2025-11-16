@@ -909,7 +909,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.4.7",
+      "version": "2.4.8",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
@@ -2586,7 +2586,7 @@
       "license": "MIT",
       "host_application": {
         "min_version": "0.10.2",
-        "max_version": "0.11.1"
+        "max_version": "0.11.2"
       },
       "homepage_url": "https://github.com/TAIY2020/custom_commands_plugin",
       "repository_url": "https://github.com/TAIY2020/custom_commands_plugin",
@@ -2792,7 +2792,7 @@
       "license": "AGPL-3.0",
       "host_application": {
         "min_version": "0.11.0",
-        "max_version": "0.11.1"
+        "max_version": "0.11.2"
       },
       "homepage_url": "https://github.com/TAIY2020/group_muter_plugin",
       "repository_url": "https://github.com/TAIY2020/group_muter_plugin",

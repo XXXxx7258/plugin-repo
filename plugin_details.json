@@ -110,8 +110,8 @@
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.10.2",
-        "max_version": "0.10.2"
+        "min_version": "0.11.0",
+        "max_version": "0.11.0"
       },
       "homepage_url": "https://github.com/schxar/doubao_search_plugin",
       "repository_url": "https://github.com/schxar/doubao_search_plugin",
@@ -2496,7 +2496,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "光遇查询插件",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "光遇工具(sky_tools_plugin)",
       "author": {
         "name": "寻",
@@ -2510,10 +2510,12 @@
       "repository_url": "https://github.com/xc94188/sky_tools_plugin",
       "keywords": [
         "光遇",
+        "Sky",
         "身高查询",
-        "任务图片",
-        "游戏工具",
-        "Sky光遇"
+        "任务查询",
+        "大蜡烛",
+        "复刻先祖",
+        "每日魔法"
       ],
       "categories": [
         "Utility Tools"
@@ -2567,6 +2569,11 @@
             "type": "command",
             "name": "redstone",
             "description": "红石位置图片获取命令"
+          },
+          {
+            "type": "command",
+            "name": "skytest",
+            "description": "检测光遇服务器状态"
           }
         ]
       }

@@ -407,7 +407,7 @@
       },
       "license": "AGPL-v3.0",
       "homepage_url": "",
-      "repository_url": "https://github.com/xuqian13/unified_tts_plugin",
+      "repository_url": "https://github.com/xuqian13/tts_voice_plugin",
       "keywords": [
         "TTS",
         "语音合成",
@@ -448,7 +448,7 @@
           {
             "type": "command",
             "name": "unified_tts_command",
-            "description": "统一TTS命令，支持/tts、/voice、/gsv2p多种命令格式，灵活指定后端和���色"
+            "description": "统一TTS命令，支持/tts、/voice、/gsv2p多种命令格式，灵活指定后端和音色"
           }
         ],
         "features": [
@@ -533,7 +533,7 @@
           "type": "action",
           "backend": "ai_voice",
           "description": "LLM自动触发AI Voice语音回复",
-          "example": "用户：请用语音说\"你好世界\"\n机器���：[使用AI Voice自动生成语音文件并发送]"
+          "example": "用户：请用语音说\"你好世界\"\n机器人：[使用AI Voice自动生成语音文件并发送]"
         },
         {
           "type": "command",
@@ -581,20 +581,19 @@
     "id": "xuqian13.music_plugin",
     "manifest": {
       "manifest_version": 1,
-      "name": "entertainment_plugin",
-      "display_name": "娱乐插件",
+      "name": "娱乐插件",
       "version": "1.0.0",
       "description": "整合了看看腿、新闻、音乐等娱乐功能的统一插件，提供图片、新闻资讯、音乐点歌等多种娱乐服务",
       "author": {
-        "name": "Augment Agent",
-        "url": "https://github.com/MaiM-with-u/maibot"
+        "name": "靓仔",
+        "url": "https://github.com/xuqian13"
       },
-      "license": "GPL-3.0-or-later",
+      "license": "AGPL-v3.0",
       "host_application": {
-        "min_version": "0.9.0",
+        "min_version": "0.11.0",
         "max_version": "1.0.0"
       },
-      "homepage": "https://github.com/MaiM-with-u/maibot",
+      "repository_url": "https://github.com/xuqian13/music_plugin",
       "keywords": [
         "娱乐",
         "图片",
@@ -2707,7 +2706,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.0.0",
+      "version": "1.1.1",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。",
       "author": {
         "name": "sakura桜花",
@@ -2839,7 +2838,7 @@
       "license": "MIT",
       "host_application": {
         "min_version": "0.10.2",
-        "max_version": "0.11.2"
+        "max_version": "0.11.4"
       },
       "homepage_url": "https://github.com/TAIY2020/custom_commands_plugin",
       "repository_url": "https://github.com/TAIY2020/custom_commands_plugin",
@@ -3045,7 +3044,7 @@
       "license": "AGPL-3.0",
       "host_application": {
         "min_version": "0.11.0",
-        "max_version": "0.11.2"
+        "max_version": "0.11.4"
       },
       "homepage_url": "https://github.com/TAIY2020/group_muter_plugin",
       "repository_url": "https://github.com/TAIY2020/group_muter_plugin",
@@ -3294,7 +3293,7 @@
       "manifest_version": 1,
       "name": "context_clear_plugin",
       "display_name": "麦麦失忆插件 (上下文清除插件升级版)",
-      "version": "1.2.1",
+      "version": "1.4.0",
       "description": "让麦麦选择性失忆,忘记之前的对话~ 支持忘记全部/最近/指定时间前的记忆,新增完全失忆模式 (改进自上下文清除插件)",
       "author": {
         "name": "靓仔",

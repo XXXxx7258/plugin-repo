@@ -998,7 +998,7 @@
       "repository_url": "https://github.com/khiqwq/silent_mode_plugin",
       "host_application": {
         "min_version": "0.8.0",
-        "max_version": "0.10.0"
+        "max_version": "0.11.0"
       },
       "keywords": [
         "silent",
@@ -1154,7 +1154,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.4.8",
+      "version": "2.4.9",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
@@ -1206,7 +1206,7 @@
       "manifest_version": 1,
       "name": "戳一戳插件",
       "display_name": "戳一戳插件",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "description": "一个主动发起“戳一戳”的 MaiMai 插件，帮助你轻松与好友互动，自动发起戳一戳，增添群聊乐趣。",
       "author": {
         "name": "何夕",
@@ -1215,8 +1215,7 @@
       },
       "license": "MIT",
       "host_application": {
-        "min_version": "0.9.0",
-        "max_version": "0.10.2"
+        "min_version": "0.9.0"
       },
       "entry": "plugin.py",
       "homepage_url": "https://github.com/Heximiao/acpoke_plugin",
@@ -2837,8 +2836,7 @@
       },
       "license": "MIT",
       "host_application": {
-        "min_version": "0.10.2",
-        "max_version": "0.11.4"
+        "min_version": "0.10.2"
       },
       "homepage_url": "https://github.com/TAIY2020/custom_commands_plugin",
       "repository_url": "https://github.com/TAIY2020/custom_commands_plugin",
@@ -3043,8 +3041,7 @@
       },
       "license": "AGPL-3.0",
       "host_application": {
-        "min_version": "0.11.0",
-        "max_version": "0.11.4"
+        "min_version": "0.11.0"
       },
       "homepage_url": "https://github.com/TAIY2020/group_muter_plugin",
       "repository_url": "https://github.com/TAIY2020/group_muter_plugin",

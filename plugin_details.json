@@ -583,7 +583,7 @@
       "manifest_version": 1,
       "name": "娱乐插件",
       "version": "1.0.0",
-      "description": "整合了看看腿、新闻、音乐等娱乐功能的统一插件，提供图片、新闻资讯、音乐点歌等多种娱乐服务",
+      "description": "整合了看看腿、新闻、音乐、AI绘图等娱乐功能的统一插件，提供图片、新闻资讯、音乐点歌、AI生成图片等多种娱乐服务",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
@@ -603,7 +603,11 @@
         "看看腿",
         "60秒",
         "网易云",
-        "QQ音乐"
+        "QQ音乐",
+        "VIP音质",
+        "聚合点歌",
+        "AI绘图",
+        "AI生成"
       ],
       "categories": [
         "Entertainment",
@@ -616,6 +620,7 @@
         "图片",
         "新闻",
         "音乐",
+        "AI绘图",
         "多功能"
       ],
       "dependencies": [],
@@ -637,7 +642,11 @@
           },
           {
             "name": "play_music",
-            "description": "搜索并播放指定歌曲。当用户想听音乐、点歌或推荐歌曲时使用此工具"
+            "description": "搜索并播放指定歌曲。当用户想听音乐、点歌或推荐歌曲时使用���工具"
+          },
+          {
+            "name": "ai_draw",
+            "description": "根据描述词生成AI图片。当用户想要AI绘图或生成图片时使用此工具"
           }
         ],
         "actions": [
@@ -652,6 +661,19 @@
               "康康腿",
               "看看大长腿",
               "大长腿"
+            ]
+          },
+          {
+            "name": "ai_draw_action",
+            "description": "根据描述词生成AI图片",
+            "activation": "keyword",
+            "keywords": [
+              "AI绘图",
+              "ai绘图",
+              "画图",
+              "绘图",
+              "生成图片",
+              "画一张"
             ]
           }
         ],
@@ -685,6 +707,11 @@
             "name": "quick_choose",
             "pattern": "直接输入数字 1-10",
             "description": "快捷选择歌曲"
+          },
+          {
+            "name": "ai_draw",
+            "pattern": "/draw 或 /绘图 或 /画图 <描述词>",
+            "description": "AI绘图命令,根据描述词生成图片"
           }
         ]
       },
@@ -700,13 +727,18 @@
         "music": {
           "enabled": true,
           "description": "音乐点歌功能，支持网易云和QQ音乐"
+        },
+        "ai_draw": {
+          "enabled": true,
+          "description": "AI绘图功能，根据描述词生成图片"
         }
       },
       "configuration": {
         "modules": {
           "image_enabled": true,
           "news_enabled": true,
-          "music_enabled": true
+          "music_enabled": true,
+          "ai_draw_enabled": true
         }
       }
     }
@@ -3289,8 +3321,8 @@
       "manifest_version": 1,
       "name": "context_clear_plugin",
       "display_name": "麦麦失忆插件 (上下文清除插件升级版)",
-      "version": "1.4.0",
-      "description": "让麦麦选择性失忆,忘记之前的对话~ 支持忘记全部/最近/指定时间前的记忆,新增完全失忆模式 (改进自上下文清除插件)",
+      "version": "1.5.0",
+      "description": "让麦麦选择性失忆,忘记之前的对话~ 支持忘记全部/最近/指定时间前的记忆,新增完全失忆模式和状态机确认机制 (改进自上下文清除插件)",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
@@ -3310,7 +3342,9 @@
         "context",
         "上下文",
         "清除",
-        "total"
+        "total",
+        "确认",
+        "状态机"
       ],
       "categories": [
         "Utility",
@@ -3328,6 +3362,13 @@
             "name": "amnesia",
             "pattern": "^/(失忆|忘记|断片|amnesia|forget|clear|清除上下文|清空上下文)",
             "description": "让麦麦失忆忘记对话"
+          }
+        ],
+        "event_handlers": [
+          {
+            "name": "amnesia_confirm_handler",
+            "event_type": "ON_MESSAGE",
+            "description": "监听失忆确认消息"
           }
         ]
       }

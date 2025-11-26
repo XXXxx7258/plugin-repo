@@ -1071,7 +1071,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "自定义智能多模型图片生成插件（custom_pic_plugin）",
-      "version": "3.1.2",
+      "version": "3.2.0",
       "description": "智能多模型图片生成插件，支持文生图和图生图自动识别。兼容OpenAI、豆包、Gemini、魔搭等多种API格式。提供命令式风格转换、模型配置管理、结果缓存等功能。支持动态模型切换、风格别名、调试开关等高级特性。",
       "author": {
         "name": "Ptrel，Rabbit",
@@ -2044,9 +2044,9 @@
     "id": "khIqwq.owner_auth_plugin",
     "manifest": {
       "manifest_version": 1,
-      "name": "用户身份验证插件 (User Authentication Plugin)",
-      "version": "1.2.0",
-      "description": "为麦麦机器人提供用户身份验证功能，在思考流程前验证发言者身份，支持多用户独立配置，兼容0.11.5版本",
+      "name": "主人身份验证插件 (Owner Authentication Plugin)",
+      "version": "1.2.1",
+      "description": "为麦麦机器人提供用户身份验证功能，支持多用户独立配置，自定义提示词模板，兼容MaiBot 0.11.5+",
       "author": {
         "name": "风花叶",
         "url": "https://github.com/khiqwq"
@@ -2059,10 +2059,11 @@
       "repository_url": "https://github.com/khiqwq/owner_auth_plugin",
       "keywords": [
         "authentication",
-        "owner",
+        "user",
         "security",
         "identity",
-        "patch"
+        "multi-user",
+        "prompt-injection"
       ],
       "categories": [
         "Other"
@@ -2085,12 +2086,11 @@
         "features": [
           "用户身份验证",
           "多用户独立配置",
+          "自定义提示词模板",
+          "User数量控制",
           "高优先级事件处理",
-          "思考流程前介入",
-          "安全身份识别",
-          "0.11.5版本兼容",
           "补丁自动管理",
-          "插件卸载时自动清理"
+          "Debug模式控制"
         ]
       }
     }
@@ -2737,7 +2737,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.1.8",
+      "version": "1.1.9",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。",
       "author": {
         "name": "sakura桜花",
@@ -2764,7 +2764,8 @@
       "plugin_info": {
         "is_built_in": false,
         "plugin_type": "command"
-      }
+      },
+      "id": "sakura桜花.gemini_drawer"
     }
   },
   {

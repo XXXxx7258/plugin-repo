@@ -1972,7 +1972,7 @@
           {
             "type": "tool",
             "name": "get_team_info",
-            "description": "���取战队信息和排名"
+            "description": "获取战队信息和排名"
           },
           {
             "type": "tool",
@@ -2779,7 +2779,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.2.5",
+      "version": "1.2.6",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。",
       "author": {
         "name": "sakura桜花",

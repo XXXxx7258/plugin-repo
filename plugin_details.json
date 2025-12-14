@@ -1772,7 +1772,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦发B站视频",
-      "version": "1.0.7",
+      "version": "1.1.0",
       "description": "让麦麦解析b站视频链接并发送，群聊私聊都可用",
       "author": {
         "name": "XinxInxiN0",
@@ -1804,7 +1804,8 @@
           "发送视频文件",
           "支持b23.tv短链"
         ]
-      }
+      },
+      "id": "XinxInxiN0.bilibili_video_sender_plugin"
     }
   },
   {
@@ -1972,7 +1973,7 @@
           {
             "type": "tool",
             "name": "get_team_info",
-            "description": "获取战队信息和排名"
+            "description": "���取战队信息和排名"
           },
           {
             "type": "tool",
@@ -2779,7 +2780,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.2.6",
+      "version": "1.2.8",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。",
       "author": {
         "name": "sakura桜花",

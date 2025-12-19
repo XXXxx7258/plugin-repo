@@ -2095,14 +2095,14 @@
       "manifest_version": 1,
       "name": "主人身份验证插件 (Owner Authentication Plugin)",
       "version": "1.3.0",
-      "description": "为麦麦机器人提供用户身份验证功能，支持多用户独立配置，自定义提示词模板，补丁代码分离，兼容MaiBot 0.11.5+",
+      "description": "为麦麦机器人提供用户身份验证功能，支持多用户独立配置，自定义提示词模板，补丁代码分离，兼容MaiBot 0.11.6+",
       "author": {
         "name": "风花叶",
         "url": "https://github.com/khiqwq"
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
-        "min_version": "0.11.5"
+        "min_version": "0.11.6"
       },
       "homepage_url": "https://github.com/khiqwq",
       "repository_url": "https://github.com/khiqwq/owner_auth_plugin",
@@ -4512,6 +4512,68 @@
         ]
       },
       "id": "Rabbit-Jia-Er.mai_clinic_plugin"
+    }
+  },
+  {
+    "id": "khiqwq.Maibot_daily_analysis",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "每日分析插件",
+      "version": "1.2.0",
+      "description": "智能分析QQ群聊天记录并生成总结，支持精美图片输出。功能包括：群聊整体总结、单个用户总结、智能群友称号、群聊金句提取、炫压抑指数分析、每日定时自动总结。基于久远(saberlights)的原插件修改。",
+      "author": {
+        "name": "风花叶",
+        "url": "https://github.com/khiqwq"
+      },
+      "license": "GPL-3.0-or-later",
+      "host_application": {
+        "min_version": "0.11.0"
+      },
+      "homepage_url": "https://github.com/khiqwq/Maibot_daily_analysis",
+      "repository_url": "https://github.com/khiqwq/Maibot_daily_analysis",
+      "keywords": [
+        "chat",
+        "summary",
+        "群聊",
+        "总结",
+        "分析",
+        "图片生成"
+      ],
+      "categories": [
+        "Utilities",
+        "Analysis"
+      ],
+      "plugin_info": {
+        "is_built_in": false,
+        "components": [
+          {
+            "type": "command",
+            "name": "chat_summary",
+            "description": "生成群聊总结"
+          },
+          {
+            "type": "command",
+            "name": "user_summary",
+            "description": "生成个人总结"
+          },
+          {
+            "type": "event_handler",
+            "name": "daily_summary_handler",
+            "description": "每日定时自动生成群聊总结"
+          }
+        ],
+        "features": [
+          "群聊整体聊天记录总结",
+          "单个用户聊天记录总结",
+          "智能群友称号分析",
+          "群聊金句提取",
+          "炫压抑指数分析",
+          "精美图片输出",
+          "每日定时自动总结",
+          "24小时发言活跃度分布图表"
+        ]
+      },
+      "id": "风花叶.Maibot_daily_analysis"
     }
   }
 ]

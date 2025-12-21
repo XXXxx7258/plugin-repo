@@ -4605,5 +4605,32 @@
       },
       "id": "风花叶.Maibot_daily_analysis"
     }
+  },
+  {
+    "id": "A0000Xz.MaiBot-MineMai-Plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "MC互通插件",
+      "version": "0.1.4",
+      "description": "使麦麦能够与Minecraft服务器进行互通的插件。",
+      "author": {
+        "name": "A肆零西烛",
+        "url": "https://github.com/A0000Xz"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.11.2",
+        "max_version": "0.12.0"
+      },
+      "keywords": [
+        "Minecraft"
+      ],
+      "categories": [
+        "Connection"
+      ],
+      "repository_url": "https://github.com/A0000Xz/MaiBot-Connect-Minecraft-Plugin",
+      "default_locale": "zh-CN",
+      "locales_path": "locales"
+    }
   }
 ]

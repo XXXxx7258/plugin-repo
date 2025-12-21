@@ -4610,9 +4610,9 @@
     "id": "A0000Xz.MaiBot-MineMai-Plugin",
     "manifest": {
       "manifest_version": 1,
-      "name": "MC互通插件",
+      "name": "Mine麦插件",
       "version": "0.1.4",
-      "description": "使麦麦能够与Minecraft服务器进行互通的插件。",
+      "description": "使麦麦能够与Minecraft服务器进行互通的插件",
       "author": {
         "name": "A肆零西烛",
         "url": "https://github.com/A0000Xz"
@@ -4628,7 +4628,7 @@
       "categories": [
         "Connection"
       ],
-      "repository_url": "https://github.com/A0000Xz/MaiBot-Connect-Minecraft-Plugin",
+      "repository_url": "https://github.com/A0000Xz/MaiBot-MineMai-Plugin",
       "default_locale": "zh-CN",
       "locales_path": "locales"
     }

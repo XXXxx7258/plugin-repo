@@ -1121,7 +1121,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "自定义智能多模型图片生成插件（custom_pic_plugin）",
-      "version": "3.3.1",
+      "version": "3.3.3",
       "description": "智能多模型图片生成插件，支持文生图和图生图自动识别。兼容OpenAI、豆包、Gemini、魔搭等多种API格式。提供命令式风格转换、模型配置管理、结果缓存等功能。支持动态模型切换、风格别名、调试开关等高级特性。",
       "author": {
         "name": "Ptrel，Rabbit-Jia-Er，saberlights Kiuon",
@@ -1908,13 +1908,13 @@
         "url": "https://github.com/yhny1001"
       },
       "description": "智能主动发言系统 - 低频率高质量的机器人主动互动",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "homepage_url": "https://github.com/yhny1001/proactive_talk_plugin",
       "repository_url": "https://github.com/yhny1001/proactive_talk_plugin",
       "license": "GPL-3.0-or-later",
       "host_application": {
         "min_version": "0.9.0",
-        "max_version": "0.9.1"
+        "max_version": "0.11.0"
       },
       "is_built_in": false,
       "plugin_type": "interactive",
@@ -4420,7 +4420,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "戳一戳插件",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "使麦麦能对被戳做出回应，同时给麦麦增加主动戳别人的能力",
       "author": {
         "name": "鲨鱼",
@@ -4631,6 +4631,75 @@
       "repository_url": "https://github.com/A0000Xz/MaiBot-MineMai-Plugin",
       "default_locale": "zh-CN",
       "locales_path": "locales"
+    }
+  },
+  {
+    "id": "A-Dawn.Mai_Forever_memories",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "Mai Forever Memories",
+      "version": "0.1.0",
+      "description": "将你与麦麦日常生活中的一点一滴保存为永恒的记忆，记录到LPMM中",
+      "author": {
+        "name": "ARC",
+        "url": "https://github.com/ARC"
+      },
+      "license": "AGPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.11.7"
+      },
+      "homepage_url": "https://github.com/A-Dawn/Mai_Forever_memories",
+      "repository_url": "https://github.com/A-Dawn/Mai_Forever_memories",
+      "keywords": [
+        "memory",
+        "lpmm",
+        "summary",
+        "knowledge"
+      ],
+      "categories": [
+        "Other"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "general",
+        "components": [
+          {
+            "type": "event_handler",
+            "name": "memories_startup",
+            "description": "启动时启动摘要调度"
+          },
+          {
+            "type": "event_handler",
+            "name": "memories_stop",
+            "description": "停止时停止摘要调度"
+          },
+          {
+            "type": "event_handler",
+            "name": "memories_forever_trigger",
+            "description": "自然语言触发永远记忆（关键词触发）"
+          },
+          {
+            "type": "action",
+            "name": "memories_forever_action",
+            "description": "通过 Action 激活永远的记忆（关键词触发）"
+          },
+          {
+            "type": "command",
+            "name": "memories",
+            "description": "管理定时聊天摘要与记忆的命令",
+            "pattern": "^/memories(?:\\s+(?P<action>[a-zA-Z_]+))?(?:\\s+(?P<arg>\\S+))?$"
+          }
+        ],
+        "features": [
+          "每日/每周摘要",
+          "永远记忆触发",
+          "导入 LPMM 知识库",
+          "性能监控与管理员告警"
+        ]
+      },
+      "id": "A-Dawn.MaiForeverMemories"
     }
   }
 ]

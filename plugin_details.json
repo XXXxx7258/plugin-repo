@@ -4420,7 +4420,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "戳一戳插件",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "使麦麦能对被戳做出回应，同时给麦麦增加主动戳别人的能力",
       "author": {
         "name": "鲨鱼",

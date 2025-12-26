@@ -1258,8 +1258,8 @@
         "点赞"
       ],
       "categories": [
-        "网络",
-        "qq空间"
+        "Content Generation",
+        "External Integration"
       ],
       "plugin_info": {
         "is_built_in": false,
@@ -1280,7 +1280,8 @@
             "description": "根据指定主题发送一条说说"
           }
         ]
-      }
+      },
+      "id": "internetsb.Maizone"
     }
   },
   {
@@ -3676,7 +3677,7 @@
             "name": "chat_summary",
             "description": "生成聊天记录总结",
             "pattern": "/summary",
-            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|昨天]"
+            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|��天]"
           },
           {
             "type": "event_handler",
@@ -4395,7 +4396,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "印象和好感度系统插件",
-      "version": "2.3.2",
+      "version": "2.3.3",
       "description": "为麦麦添加动态印象和好感度系统，LLM生成自然语言印象和动态好感度更新，使用独立的impression_affection_data.db数据库",
       "author": {
         "name": "heitiehu-beep",
@@ -4639,11 +4640,11 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Mai Forever Memories",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "description": "将你与麦麦日常生活中的一点一滴保存为永恒的记忆，记录到LPMM中",
       "author": {
         "name": "ARC",
-        "url": "https://github.com/ARC"
+        "url": "https://github.com/A-Dawn"
       },
       "license": "AGPL-v3.0-or-later",
       "host_application": {

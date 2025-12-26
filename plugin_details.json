@@ -3677,7 +3677,7 @@
             "name": "chat_summary",
             "description": "生成聊天记录总结",
             "pattern": "/summary",
-            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|��天]"
+            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|昨天]"
           },
           {
             "type": "event_handler",
@@ -4702,6 +4702,59 @@
         ]
       },
       "id": "A-Dawn.MaiForeverMemories"
+    }
+  },
+  {
+    "id": "linyuww.IgnorePhrasePlugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "IgnorePhrasePlugin",
+      "version": "1.0.0",
+      "description": "当用户输入匹配特定正则表达式的短语时，自动忽略该消息，不进行回复。",
+      "author": {
+        "name": "linyuww",
+        "url": "https://github.com/linyuww"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.10.2"
+      },
+      "repository_url": "https://github.com/linyuww/IgnorePhrasePlugin",
+      "keywords": [
+        "ignore",
+        "regex",
+        "filter",
+        "忽略",
+        "过滤"
+      ],
+      "categories": [
+        "Utility Tools"
+      ],
+      "default_locale": "zh-CN",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "filter",
+        "components": [
+          {
+            "type": "event_handler",
+            "name": "ignore_message_handler",
+            "description": "拦截匹配配置短语或正则表达式的消息"
+          },
+          {
+            "type": "command",
+            "name": "ignore",
+            "description": "管理忽略词列表",
+            "pattern": "/ignore"
+          }
+        ],
+        "features": [
+          "短语匹配过滤",
+          "正则表达式匹配",
+          "WebUI可视化配置",
+          "聊天命令管理",
+          "白名单/黑名单权限控制"
+        ]
+      }
     }
   }
 ]

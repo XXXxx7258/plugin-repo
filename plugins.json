@@ -334,6 +334,10 @@
   {
     "id": "linyuww.IgnorePhrasePlugin",
     "repositoryUrl": "https://github.com/linyuww/IgnorePhrasePlugin"
+  },
+  {
+    "id": "ThelevenFD.wait_remover",
+    "repositoryUrl": "https://github.com/ThelevenFD/wait_remover"
   }
 ]
 

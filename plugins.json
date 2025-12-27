@@ -334,6 +334,10 @@
   {
     "id": "linyuww.IgnorePhrasePlugin",
     "repositoryUrl": "https://github.com/linyuww/IgnorePhrasePlugin"
+  },
+  {
+    "id": "Rankgice.comfyui-maibot-plugin",
+    "repositoryUrl": "https://github.com/Rankgice/comfyui-maibot-plugin"
   }
 ]
 

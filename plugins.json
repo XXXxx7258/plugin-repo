@@ -336,6 +336,10 @@
     "repositoryUrl": "https://github.com/linyuww/IgnorePhrasePlugin"
   },
   {
+    "id": "Rankgice.comfyui-maibot-plugin",
+    "repositoryUrl": "https://github.com/Rankgice/comfyui-maibot-plugin"
+  },
+  {
     "id": "ThelevenFD.wait_remover",
     "repositoryUrl": "https://github.com/ThelevenFD/wait_remover"
   }

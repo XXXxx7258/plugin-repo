@@ -399,7 +399,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "统一TTS语音合成插件",
-      "version": "3.2.0",
+      "version": "3.2.2",
       "description": "统一TTS语音合成插件，整合AI Voice、GSV2P、GPT-SoVITS、豆包语音、CosyVoice五种后端引擎，提供灵活的语音合成能力。",
       "author": {
         "name": "靓仔",
@@ -514,7 +514,7 @@
             "endpoint": "ModelScope Gradio API",
             "authentication": "无需认证（公开Gradio接口）",
             "limitations": "依赖ModelScope服务可用性",
-            "features": "3秒声音克隆、17种方言支持、情感语速控制、自然语言指令"
+            "features": "3秒声音克隆���17种方言支持、情感语速控制、自然语言指令"
           }
         }
       },
@@ -614,6 +614,10 @@
         ],
         "migration_notes": [
           "本插件整合了ai_voice_plugin、gsv2p_tts_plugin和旧版tts_voice_plugin的所有功能",
+          "v3.2.2适配智能分割插件（支持|||SPLIT|||分隔符精确分段）",
+          "v3.2.2支持GPT-SoVITS数组格式配置（WebUI友好，向后兼容字典格式）",
+          "v3.2.2修复豆包语音音色信息显示乱码问题",
+          "v3.2.2优化配置文件注释，更简洁清晰",
           "v3.2.0新增CosyVoice后端支持（阿里云语音合成，支持17种方言和3秒声音克隆）",
           "v3.1.0新增豆包语音后端支持",
           "v3.1.0重构为模块化架构，提升代码可维护性",
@@ -624,7 +628,8 @@
           "GPT-SoVITS风格配置需要重新设置",
           "新增config.toml.example模板文件"
         ]
-      }
+      },
+      "id": "靓仔.tts_voice_plugin"
     }
   },
   {
@@ -4782,6 +4787,119 @@
         "Content Generation",
         "External Integration"
       ]
+    }
+  },
+  {
+    "id": "UBC2008.galgame_search_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "Galgame 搜索插件",
+      "version": "1.0.0",
+      "description": "帮助用户从 TouchGal 和 ShionLib 网站搜索 Galgame 游戏资源，支持 /gal 命令、自然语言查询，支持用llm扩展搜索关键词",
+      "author": {
+        "name": "霜印",
+        "url": "https://github.com/UBC2008?tab=repositories"
+      },
+      "host_application": {
+        "min_version": "0.10.0"
+      },
+      "keywords": [
+        "galgame",
+        "search",
+        "二次元",
+        "搜索"
+      ],
+      "categories": [
+        "Utility",
+        "Entertainment"
+      ],
+      "default_locale": "zh-CN",
+      "license": "MIT",
+      "repository_url": "https://github.com/UBC2008/galgame_search_plugin"
+    }
+  },
+  {
+    "id": "MorningFeather.safebooru_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "Safebooru动漫图片搜索插件",
+      "version": "1.0.0",
+      "description": "从Safebooru网站搜索并发送动漫图片，支持命令和自然语言交互",
+      "author": {
+        "name": "MaiBot开发团队",
+        "url": "https://github.com/MaiM-with-u"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.8.0"
+      },
+      "homepage_url": "https://github.com/MaiM-with-u/maibot",
+      "repository_url": "https://github.com/MaiM-with-u/maibot",
+      "keywords": [
+        "safebooru",
+        "anime",
+        "image",
+        "search",
+        "pictures",
+        "动漫",
+        "图片搜索"
+      ],
+      "categories": [
+        "Media",
+        "Entertainment",
+        "Image"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "media",
+        "components": [
+          {
+            "type": "command",
+            "name": "safebooru",
+            "description": "从Safebooru搜索动漫图片",
+            "pattern": "/safebooru [标签] 或 /sb [标签]"
+          },
+          {
+            "type": "action",
+            "name": "safebooru_search",
+            "description": "智能识别发图请求并搜索图片",
+            "activation_modes": [
+              "keyword"
+            ],
+            "keywords": [
+              "发图",
+              "来张图",
+              "图片",
+              "image",
+              "图图",
+              "来点图",
+              "动漫图",
+              "二次元",
+              "壁纸",
+              "插画"
+            ]
+          },
+          {
+            "type": "tool",
+            "name": "safebooru_search",
+            "description": "从Safebooru搜索动漫图片，支持按标签搜索",
+            "available_for_llm": true
+          }
+        ],
+        "features": [
+          "Safebooru API集成",
+          "多组件支持（Command/Action/Tool）",
+          "自然语言处理",
+          "人格化回复",
+          "图片格式转换",
+          "配置化设置",
+          "错误处理和重试"
+        ],
+        "dependencies": []
+      },
+      "id": "MaiBot开发团队.safebooru_plugin"
     }
   }
 ]

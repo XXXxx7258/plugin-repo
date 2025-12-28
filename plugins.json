@@ -340,8 +340,15 @@
     "repositoryUrl": "https://github.com/Rankgice/comfyui-maibot-plugin"
   },
   {
+    "id": "UBC2008.galgame_search_plugin",
+    "repositoryUrl": "https://github.com/UBC2008/galgame_search_plugin"
+  },
+  {
+    "id": "MorningFeather.safebooru_plugin",
+    "repositoryUrl": "https://github.com/MorningFeather/safebooru_plugin"
+  },
+  {
     "id": "ThelevenFD.wait_remover",
     "repositoryUrl": "https://github.com/ThelevenFD/wait_remover"
   }
 ]
-

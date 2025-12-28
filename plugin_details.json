@@ -4817,5 +4817,89 @@
       "license": "MIT",
       "repository_url": "https://github.com/UBC2008/galgame_search_plugin"
     }
+  },
+  {
+    "id": "MorningFeather.safebooru_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "Safebooru动漫图片搜索插件",
+      "version": "1.0.0",
+      "description": "从Safebooru网站搜索并发送动漫图片，支持命令和自然语言交互",
+      "author": {
+        "name": "MaiBot开发团队",
+        "url": "https://github.com/MaiM-with-u"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.8.0"
+      },
+      "homepage_url": "https://github.com/MaiM-with-u/maibot",
+      "repository_url": "https://github.com/MaiM-with-u/maibot",
+      "keywords": [
+        "safebooru",
+        "anime",
+        "image",
+        "search",
+        "pictures",
+        "动漫",
+        "图片搜索"
+      ],
+      "categories": [
+        "Media",
+        "Entertainment",
+        "Image"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "media",
+        "components": [
+          {
+            "type": "command",
+            "name": "safebooru",
+            "description": "从Safebooru搜索动漫图片",
+            "pattern": "/safebooru [标签] 或 /sb [标签]"
+          },
+          {
+            "type": "action",
+            "name": "safebooru_search",
+            "description": "智能识别发图请求并搜索图片",
+            "activation_modes": [
+              "keyword"
+            ],
+            "keywords": [
+              "发图",
+              "来张图",
+              "图片",
+              "image",
+              "图图",
+              "来点图",
+              "动漫图",
+              "二次元",
+              "壁纸",
+              "插画"
+            ]
+          },
+          {
+            "type": "tool",
+            "name": "safebooru_search",
+            "description": "从Safebooru搜索动漫图片，支持按标签搜索",
+            "available_for_llm": true
+          }
+        ],
+        "features": [
+          "Safebooru API集成",
+          "多组件支持（Command/Action/Tool）",
+          "自然语言处理",
+          "人格化回复",
+          "图片格式转换",
+          "配置化设置",
+          "错误处理和重试"
+        ],
+        "dependencies": []
+      },
+      "id": "MaiBot开发团队.safebooru_plugin"
+    }
   }
 ]

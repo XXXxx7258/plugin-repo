@@ -2830,7 +2830,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.5.1",
+      "version": "1.5.2",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。",
       "author": {
         "name": "sakura桜花",
@@ -4823,20 +4823,20 @@
   {
     "id": "MorningFeather.safebooru_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
       "name": "Safebooru动漫图片搜索插件",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "description": "从Safebooru网站搜索并发送动漫图片，支持命令和自然语言交互",
       "author": {
-        "name": "MaiBot开发团队",
-        "url": "https://github.com/MaiM-with-u"
+        "name": "MorningFeather",
+        "url": "https://github.com/MorningFeather"
       },
       "license": "GPL-v3.0-or-later",
       "host_application": {
         "min_version": "0.8.0"
       },
-      "homepage_url": "https://github.com/MaiM-with-u/maibot",
-      "repository_url": "https://github.com/MaiM-with-u/maibot",
+      "homepage_url": "https://github.com/MorningFeather/safebooru_plugin",
+      "repository_url": "https://github.com/MorningFeather/safebooru_plugin",
       "keywords": [
         "safebooru",
         "anime",
@@ -4868,19 +4868,7 @@
             "name": "safebooru_search",
             "description": "智能识别发图请求并搜索图片",
             "activation_modes": [
-              "keyword"
-            ],
-            "keywords": [
-              "发图",
-              "来张图",
-              "图片",
-              "image",
-              "图图",
-              "来点图",
-              "动漫图",
-              "二次元",
-              "壁纸",
-              "插画"
+              "ALWAYS"
             ]
           },
           {
@@ -4897,11 +4885,14 @@
           "人格化回复",
           "图片格式转换",
           "配置化设置",
-          "错误处理和重试"
+          "VBS (Verify-Before-Search) 校验架构",
+          "多维标签消歧与纠错",
+          "状态化交互流",
+          "严格显式触发机制"
         ],
         "dependencies": []
       },
-      "id": "MaiBot开发团队.safebooru_plugin"
+      "id": "MorningFeather.safebooru_plugin"
     }
   },
   {
@@ -4928,6 +4919,55 @@
       "categories": [
         "Other"
       ]
+    }
+  },
+  {
+    "id": "Alvter.repeat_content_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "麦麦自动+1群内消息插件",
+      "version": "1.0.0",
+      "description": "自动复读群内消息(不改变reply)",
+      "author": {
+        "name": "Alvter",
+        "url": "https://github.com/Alvter"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.8.0"
+      },
+      "homepage_url": "https://github.com/Alvter/repeat_content_plugin",
+      "repository_url": "https://github.com/Alvter/repeat_content_plugin",
+      "keywords": [
+        "repeat",
+        "repeater",
+        "group",
+        "fun"
+      ],
+      "categories": [
+        "Fun",
+        "Group"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "fun",
+        "components": [
+          {
+            "type": "event_handler",
+            "name": "repeat_content_handler",
+            "description": "检测群内连续相同内容并复读"
+          }
+        ],
+        "features": [
+          "检测群内连续相同的消息内容",
+          "达到设定次数时自动复读",
+          "可配置复读触发条件",
+          "支持过滤机器人消息"
+        ]
+      },
+      "id": "Alvter.repeat_content_plugin"
     }
   }
 ]
